@@ -6,7 +6,7 @@ phases:
       php: 7.4
   build:
     commands:
-      - composer install --optimize-autoloader --no-dev
+      #- composer install --optimize-autoloader --no-dev
 artifacts:
   files:
     - '**/*'
