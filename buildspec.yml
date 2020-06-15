@@ -6,7 +6,8 @@ phases:
       php: 7.4
   build:
     commands:
-      #- composer install --optimize-autoloader --no-dev
+      - composer install --optimize-autoloader --no-dev
+      - sh $CODEBUILD_SRC_DIR/scripts/env
 artifacts:
   files:
     - '**/*'
